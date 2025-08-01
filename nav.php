@@ -9,7 +9,7 @@
 </head>
 <body>
     
-        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark" style="--bs-bg-opacity: .85; backdrop-filter: blur(10px) !important; -webkit-backdrop-filter: blur(10px)!important;">
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" style="--bs-bg-opacity: .7; backdrop-filter: blur(10px) !important; -webkit-backdrop-filter: blur(10px) !important;">
             <div class="container">
                 <a href="index.php" class="navbar-brand mb-0"><img class="d-inline-block mb-1 me-1" src="assets/icon.png" width="30" height="25"/>Adrenalin BBQ & GRILL</a>
             
