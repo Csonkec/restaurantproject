@@ -24,3 +24,15 @@
     -1px  0px 0 black,
      1px  0px 0 black;
   }
+
+  @media (max-width: 768px){
+    .hero p{
+        font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 425px){
+    .hero p{
+        font-size: 2rem;
+    }
+  }
