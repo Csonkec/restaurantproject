@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/icon.svg" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: "Roboto Condensed", sans-serif;
+        }
+    </style>
 </head>
 <body>
     
@@ -20,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a href="#" class="nav-link">Asztalfoglalás</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Menü</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Étlap</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Kapcsolat</a></li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
@@ -29,7 +37,6 @@
                                 <li><a href="#" class="dropdown-item">Regisztrálás</a></li>
                             </ul>
                         </li>
-                        
                     </ul>
                 </div>
             </div>
