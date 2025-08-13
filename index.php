@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <title>Adrenalin BBQ & GRILL</title>
     <link rel="stylesheet" href="styles/index.css">
