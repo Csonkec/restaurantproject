@@ -11,7 +11,7 @@
 <body>
     <section class="hero mb-5">
         <p class="fw-bold text-light text-shadow">Foglalj asztalt könnyedén nálunk!</p>
-        <a href="#" class="btn btn-danger btn-lg">Foglalás most</a>
+        <a href="reservation.php" class="btn btn-danger btn-lg">Foglalás most</a>
     </section>
 
     <section class="container">
@@ -63,7 +63,7 @@
                 </button>
             </div>
             <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-danger btn-lg mt-4">Teljes étlap megtekintése</a>
+                <a href="https://jezeroadrenalin.com/wp-content/uploads/2025/06/AdrenalinBBQNewMENU-HU1Website-scaled.jpg" target="blank_" class="btn btn-danger btn-lg mt-4">Teljes étlap megtekintése</a>
             </div>
         </div>
     </section>
@@ -71,8 +71,8 @@
     <section class="container">
         <h1 class="h1 text-center mt-5">Nem vagy még tag? Regisztrálj be és jelentkezz be most!</h1>
         <div class="d-flex justify-content-center mb-5">
-            <a href="#" class="btn btn-danger btn-lg mt-1 me-1">Bejelentkezés</a>
-            <a href="#" class="btn btn-danger btn-lg mt-1 ms-1">Regisztrálás</a>
+            <a href="login.php" class="btn btn-danger btn-lg mt-1 me-1">Bejelentkezés</a>
+            <a href="register.php" class="btn btn-danger btn-lg mt-1 ms-1">Regisztrálás</a>
         </div>
     </section>
     

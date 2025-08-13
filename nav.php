@@ -27,14 +27,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a href="#" class="nav-link">Asztalfoglalás</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Étlap</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Kapcsolat</a></li>
+                        <li class="nav-item"><a href="reservation.php" class="nav-link">Asztalfoglalás</a></li>
+                        <li class="nav-item"><a href="https://jezeroadrenalin.com/wp-content/uploads/2025/06/AdrenalinBBQNewMENU-HU1Website-scaled.jpg" target="blank_" class="nav-link">Étlap</a></li>
+                        <li class="nav-item"><a href="contact.php" class="nav-link">Kapcsolat</a></li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#" class="dropdown-item">Bejelentkezés</a></li>
-                                <li><a href="#" class="dropdown-item">Regisztrálás</a></li>
+                                <li><a href="login.php" class="dropdown-item">Bejelentkezés</a></li>
+                                <li><a href="register.php" class="dropdown-item">Regisztrálás</a></li>
                             </ul>
                         </li>
                     </ul>
