@@ -9,8 +9,12 @@
     align-content: center;
 }
 
-.hero p{
+.hero p:first-of-type{
     font-size: 4rem;
+}
+
+.hero p:last-of-type{
+    font-size: 2rem;
 }
 
 .text-shadow {
@@ -26,13 +30,19 @@
   }
 
   @media (max-width: 768px){
-    .hero p{
+    .hero p:first-of-type{
         font-size: 3rem;
+    }
+    .hero p:last-of-type{
+        font-size: 1.5rem;
     }
   }
 
   @media (max-width: 425px){
-    .hero p{
+    .hero p:first-of-type{
         font-size: 2rem;
+    }
+    .hero p:last-of-type{
+        font-size: 1rem;
     }
   }
