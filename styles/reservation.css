@@ -74,10 +74,11 @@ header .header-icons span:hover{
     background-color: green;   
 }
 
-.days li.inactive{
-    color: rgb(170, 170, 170);
-}
-
 .days li.active{
     color: #fff;
 }
+
+.days li.inactive{
+    color: rgb(170, 170, 170);
+    cursor: not-allowed;
+}    

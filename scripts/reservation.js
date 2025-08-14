@@ -16,14 +16,34 @@ const renderCalendar = () =>{
     let lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate();
     let lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay()
     let liTag = "";
+    let daysCount = -1;
+    let daysCount2 = 0;
 
     for (let i = firstDayofMonth; i > 0; i--) {
+        daysCount++;
+        daysCount2++;
         liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
     }
 
     for (let i = 1; i <= lastDateofMonth; i++) {
-        let isToday = i === date.getDate() && currMonth === new Date().getMonth() && currYear === new Date().getFullYear() ? "active" : ""; 
-        liTag += `<li class="${isToday}">${i}</li>`;
+        let isToday = ""; 
+        daysCount++;
+        daysCount2++;
+
+        if(daysCount % 7 != 0 && daysCount2 % 7 != 0){
+            if(i === date.getDate() && currMonth === new Date().getMonth() && currYear === new Date().getFullYear()){
+            isToday = "active";
+            }
+            if(date.getDate() > i && currMonth == date.getMonth()){
+                liTag += `<li class="inactive">${i}</li>`;
+            }
+            else{
+                liTag += `<li class="${isToday}">${i}</li>`;
+            }   
+        }
+        else{
+            liTag += `<li class="inactive">${i}</li>`;
+        } 
     }
 
     for (let i = lastDayofMonth; i < 6; i++) {
@@ -37,7 +57,15 @@ renderCalendar();
 
 prevNextIcons.forEach(icon => {
     icon.addEventListener("click", () => {
-        currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;  
+        currMonth = icon.id === "prev" ? currMonth - 1 === date.getMonth() - 1 ? currMonth : currMonth-1 : currMonth + 1;  
+
+        if(currMonth < 0 || currMonth > 11){
+            date = new Date(currYear, currMonth);
+            currYear = date.getFullYear();
+            currMonth = date.getMonth();
+        }else{
+            date = new Date();
+        }
         renderCalendar(); 
     })
 });
