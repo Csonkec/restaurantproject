@@ -6,6 +6,9 @@ let date = new Date(),
 currYear = date.getFullYear(),
 currMonth = date.getMonth();
 
+let activeDay = date.getDate();
+let activeMonth = currMonth;
+let activeYear = currYear;
 
 const months = ["Január","Február","Március","Április","Május","Június","Július","Augusztus","Szeptember","Október","November","December"];
 
@@ -31,15 +34,17 @@ const renderCalendar = () =>{
         daysCount2++;
 
         if(daysCount % 7 != 0 && daysCount2 % 7 != 0){
-            if(i === date.getDate() && currMonth === new Date().getMonth() && currYear === new Date().getFullYear()){
-            isToday = "active";
-            }
-            if(date.getDate() > i && currMonth == date.getMonth()){
-                liTag += `<li class="inactive">${i}</li>`;
+            if(activeDay == i && activeMonth == currMonth && activeYear == currYear){
+                liTag += `<li class="active">${i}</li>`;
             }
             else{
-                liTag += `<li class="${isToday}">${i}</li>`;
-            }   
+                if(date.getDate() > i && currMonth == date.getMonth()){
+                    liTag += `<li class="inactive">${i}</li>`;
+                }
+                else{
+                    liTag += `<li>${i}</li>`;
+                } 
+            } 
         }
         else{
             liTag += `<li class="inactive">${i}</li>`;
@@ -68,4 +73,13 @@ prevNextIcons.forEach(icon => {
         }
         renderCalendar(); 
     })
+});
+
+daysTag.addEventListener("click", function(event){
+    if(event.target.tagName.toLowerCase() === "li" && !event.target.classList.contains("inactive")){
+        activeDay = event.target.textContent; 
+        activeMonth = currMonth;
+        activeYear = currYear;
+        renderCalendar(); 
+    }
 });

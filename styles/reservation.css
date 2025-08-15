@@ -1,6 +1,6 @@
 .wrapper{
-    background-color: rgb(216, 216, 216);
-    width: 450px;
+    background-color: rgb(221, 221, 221);
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -82,3 +82,31 @@ header .header-icons span:hover{
     color: rgb(170, 170, 170);
     cursor: not-allowed;
 }    
+
+.left-side, .right-side{
+    width: calc(100% / 2.5);
+}
+
+.right-side{
+    font-size: 1.25rem;
+}
+
+.hr{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .direction{
+        flex-direction: column;
+    }
+    .left-side, .right-side{
+    width: 100%;
+    }
+    .vr{
+        display: none;
+    }
+    .hr{
+        display: block;
+        margin-block: 2.5rem;
+    }
+}
