@@ -1,3 +1,7 @@
+<?php 
+    include "db-config.php";
+?>
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
