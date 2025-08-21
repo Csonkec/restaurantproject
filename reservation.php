@@ -5,7 +5,6 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <title>Adrenalin BBQ & GRILL</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/reservation.css">
     <script src="scripts/reservation.js" defer></script>
@@ -76,7 +75,7 @@
                         <textarea name="comment" id="comment" rows="3" class="form-control"></textarea>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-lg btn-primary">Küldés</button>
+                        <button type="submit" class="btn btn-lg btn-primary">Foglalás</button>
                         <button type="reset" class="btn btn-lg btn-danger">Törlés</button>
                     </div>
                 </form>
